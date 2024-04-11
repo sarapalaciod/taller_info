@@ -32,3 +32,24 @@ def cargar_archivo(a):
         return datos 
     else:
         print ('Archivo no compatible')
+
+def suma_eje(arr, eje=None):
+    return np.sum(arr, axis=eje)
+
+def resta_eje(arr, eje=None):
+    return np.subtract(arr, np.mean(arr, axis=eje), axis=eje)
+
+def multiplicacion_eje(arr, eje=None):
+    return np.prod(arr, axis=eje)
+
+def division_eje(arr, eje=None):
+    return np.divide(arr, np.mean(arr, axis=eje), axis=eje)
+
+def logaritmo_eje(arr, eje=None):
+    return np.log(arr, axis=eje)
+
+def promedio_eje(arr, eje=None):
+    return np.mean(arr, axis=eje)
+
+def desviacion_estandar_eje(arr, eje=None):
+    return np.std(arr,axis=eje)
