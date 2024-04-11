@@ -1,4 +1,5 @@
-import numpy as np 
+import numpy as np
+import pandas as pd 
 
 matriz_aleatoria= np.random.randint(11, size=(20,30,20,100))
 
@@ -14,3 +15,9 @@ print(f'tipo de datos:',nueva_matriz.dtype)
 
 matriz_2d= np.reshape(nueva_matriz,(100,120))
 print(f' Matriz 2D: {matriz_2d}')
+
+def matriz_dataframe(m):
+    df= pd.DataFrame(m)
+    return df 
+data_resultado= matriz_dataframe(matriz_2d)
+print(f'Data Frame: {data_resultado}')
