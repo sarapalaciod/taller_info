@@ -10,3 +10,7 @@ print(f'dimencion:',nueva_matriz.ndim)
 print(f'tamaño:',nueva_matriz.shape)
 print(f'numero de elementos:',nueva_matriz.size)
 print(f'tipo de datos:',nueva_matriz.dtype)
+
+
+matriz_2d= np.reshape(nueva_matriz,(100,120))
+print(f' Matriz 2D: {matriz_2d}')
