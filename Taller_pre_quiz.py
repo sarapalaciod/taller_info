@@ -53,3 +53,6 @@ def promedio_eje(arr, eje=None):
 
 def desviacion_estandar_eje(arr, eje=None):
     return np.std(arr,axis=eje)
+
+datos_archivos= cargar_archivo('heart.csv')
+print(datos_archivos)
